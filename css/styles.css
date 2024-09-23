@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+    margin: 0;
+    font-family: "VT323", monospace;
+}
+body{
+    background-color: #414141;
+}
+#game-board{
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: repeat(20,20px);
+    grid-template-rows: repeat(20,20px);
+    margin:5px;
+
+}
+.game-border-1{
+    border:rgb(220, 190, 15) solid 10px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px rgb(220, 190, 15)  ;
+}
+.game-border-2{
+    border:rgb(229, 142, 12) solid 10px;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px rgb(229, 142, 12) ;
+}
+.game-border-3{
+    border:rgb(235, 98, 12) solid 10px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 10px white;
+}
+#instruction{
+    position: absolute;
+    top:60%;
+    color:#333;
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+
+    padding: 30px;
+    margin:0;
+
+
+}
+img{
+    width:150px;
+}
+.scores{
+    display: flex;
+    justify-content: space-between;
+}
+#score{
+    color:rgb(132, 142, 97);
+    
+
+}
+#score, #highscore{
+    font-size: 40px;
+    font-weight: bolder;
+    margin:10px 0;
+}
+#highscore{
+   color:#d8ddca; 
+   display:none;   
+}
+.game-border-3 , #logo{
+    background-color:white;
+}
+.snake{   
+    background-color: rgb(242, 239, 234); /* Optional, to show background color if image is not loaded */
+    /* border: #e5e9e5 1px dotted; */
+    background-image: url('../images/real.png');
+    background-size: cover; /* Ensures the image covers the entire cell */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 20px; /* Ensure the width matches grid size */
+    height: 20px; /* Ensure the height matches grid size */
+}
+    
+    
+
+
+.food{
+    background-color: #dedede;
+    /* border:#f7eeee 5px solid; */
+    background-image: url('../images/real.png');
+    background-size: cover; /* Ensures the image covers the entire cell */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 20px; /* Ensure the width matches grid size */
+    height: 20px; /* Ensure the height matches grid size */
+}
+
+
+
+#logo{
+    position:absolute
+}
